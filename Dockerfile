@@ -10,7 +10,11 @@ RUN adduser -h $APP_DIRECTORY -s /bin/sh -D -H $APP_USER
 
 WORKDIR $APP_DIRECTORY
 
-COPY . .
+COPY ./app.tar.gz .
+
+RUN tar -xvf app.tar.gz
+
+RUN rm app.tar.gz
 
 RUN pip install -r requirements.txt
 

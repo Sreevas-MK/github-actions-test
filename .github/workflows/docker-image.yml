@@ -30,4 +30,4 @@ jobs:
           push: true
           tags: |
             sreevasmk1993/github-actions-test:latest
-            sreevasmk1993/github-acions-test:${{ github.sha }}
+            sreevasmk1993/github-actions-test:${{ github.sha }}
